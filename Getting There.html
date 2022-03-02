@@ -1,0 +1,169 @@
+
+<img src="icons/sorrento_by_the_sea_logo.jpg"
+ width="1220" 
+ height="100"/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Helvetica, Calibri;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #858585;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #555;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+h1 {text-align: center;}
+
+h1 {
+  color: #87423c;
+  font-family: Helvetica, Calibri;
+  font-size: 36px;
+
+}
+h2  {
+  color: #4d1d18;
+  font-family: Helvetica, Calibri;
+  font-size: 24px;
+}
+
+div.a{
+  line-height: 150%;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Home.html">Home</a> 
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Pricing.html">Pricing</a> 
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Company%20Information%20&%20Contact%20Details.html">Company Information</a> 
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Highlights%20of%20the%20Local%20Area.html">Highlights</a> 
+  <a class="active href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Getting%20There.html">Getting There</a> 
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Testimonials.html">Testimonials</a> 
+</div>
+
+<div style="padding-left:16px">
+</div>
+<style>
+ * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 290px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h1>Getting There</h1>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="icons/searoad_ferry.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="icons/sorrento_ferry.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 5 seconds
+}
+</script>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>How to get to Sorrento by the Sea</h2>
+    <div class="a">It is easy to find. From Melbourne, take the Monash Freeway, connect onto the Eastlink heading for Portsea, then onto the Peninsula link to Sorrento.</div> 
+    <div class="a">Another option is the scenic drive around the beach. Although longer, it allows you to experience the coastline from Port Melbourne to Sorrento.</div> 
+    <div class="a">If you choose to come across on the Queenscliff/Sorrento Ferry, it is only a 2 minute drive from the Ferry Depot.</div> 
+    <div class="a">If you are a foot passenger we are happy to meet you at the Sorrento ferry at. Just phone us on 0435 123 456 as you arrive.</div>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Contact Details</h2>
+    <div class="a">Sorrento by the Sea Apartment - Luxury Self Contained Apartment</div> 
+    <strong> <div class="a"><a href="http://yoursite.com/" style="text-decoration:none">Contact Form</a></div></strong> 
+  </div>
+</div>
+
+
+
+<footer>
+  <img src="icons/paypal_small.png"
+align="left"/>
+  <img src="icons/instagram_small.png"
+align="left"/>
+  <img src="icons/facebook_small.png"
+align="left"/>
+  <img src="icons/twitter_small.png"
+align="left"/>
+  <img src="icons/youtube_small.png"
+align="left"/>
+</footer>
+
+
+</style>
+</head>
+<body>

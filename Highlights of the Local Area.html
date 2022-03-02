@@ -1,0 +1,208 @@
+<img src="icons/sorrento_by_the_sea_logo.jpg"
+ width="1220" 
+ height="100"/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Helvetica, Calibri;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #858585;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #555;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+h1 {text-align: center;}
+
+h1 {
+  color: #87423c;
+  font-family: Helvetica, Calibri;
+  font-size: 36px;
+
+}
+h2  {
+  color: #4d1d18;
+  font-family: Helvetica, Calibri;
+  font-size: 24px;
+}
+
+div.a{
+  line-height: 150%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Home.html">Home</a> 
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Pricing.html">Pricing</a> 
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Company%20Information%20&%20Contact%20Details.html">Company Information</a> 
+  <a class="active href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Highlights%20of%20the%20Local%20Area.html">Highlights</a> 
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Getting%20There.html">Getting There</a> 
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Testimonials.html">Testimonials</a> 
+</div>
+
+<div style="padding-left:16px">
+</div>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 960px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Highlights of Local Area</h1>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="icons/dog_beach.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="icons/peninsula_hot_springs.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="icons/ocean_beach3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 10 seconds
+}
+</script>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Wineries and Restaurants</h2>
+    <div class="a">There are more than 55 wineries to choose from - offering cellar door sales, restaurants, cafes and tours.</div> 
+    <div class="a">Along the way discover a foodie’s paradise.</div> 
+    <div class="a">Meet the growers, producers, providers and chefs.</div> 
+    <div class="a">Experience the fun of picking your own produce or buying dinner ingredients at the farm gate.</div> 
+    <div class="a">Dine with views of the sea, lakes and vineyards.</div> 
+    <h2>Golf</h2>
+    <div class="a">The Mornington Peninsula is blessed with 19 courses that both challenge and excite.</div> 
+    <div class="a">Many golf courses provide the most exhilarating views over Port Phillip Bay, Western Port and Bass Strait.</div> 
+    <div class="a">The sandhills and coastal hinterland provide wonderful examples of links, resorts and traditional courses.</div> 
+    <div class="a">Visitors are always welcome.</div> 
+    <div class="a">Dine with views of the sea, lakes and vineyards.</div> 
+	<h2>Peninsula Hot Springs</h2>
+    <div class="a">Another world awaits.</div> 
+    <div class="a">Enjoy the thermal bathing area or book a private indoor or outdoor hot springs bath experience.</div> 
+    <div class="a">Activities include reflexology treatments, foot and hand baths, sauna, steam baths, cold plunges and yoga.</div> 
+    <div class="a">The cafe at the bathhouse provides light meals and gourmet pizzas.</div>  
+	<div class="a">Feel revitalised and relaxed at the same time.</div> 
+    <h2>Queenscliff-Sorrento Ferry</h2>
+    <div class="a">There's no better way to cross the Bay with your car or as a foot passenger in only 40 minutes.</div> 
+    <div class="a">Spot the playful dolphins whilst enjoying a coffee and light refreshments.</div> 
+	<div class="a"> The ferries run every day of the year on the hour.</div> 
+    <div class="a">Wonderful restaurants at historic Queenscliff on the Bellarine peninsula offer perfect lunchtime adventures.</div> 
+   </div>
+  <div class="column" style="background-color:#bbb;">
+     <h2>Walking Tracks</h2>
+     <div class="a">Fabulous walking tracks in any direction for all ages.</div> 
+     <div class="a">Beautiful beach walks, amazing clifftop strolls, and more serious walkers, a 100km walk combine the Bay trial, National Parks, and the two Bays walk through the hinterland.</div>
+     <h2>Arts and Culture</h2>
+     <div class="a">The Mornington Peninsula hosts various exhibitions and galleries, featuring fine art, sculpture, ceramics, jewellery, hand-blown glass and clothing.</div> 
+     <div class="a">Small local galleries and craft markets are in abundance across the region.</div> 
+     <h2>Shopping Escapades</h2>
+     <div class="a">Lovely, leisurely shopping - for pure pleasure - is listed as the number one activity for holidaymakers.</div> 
+     <div class="a">Sorrento and Mornington will not disappoint.</div> 
+     <div class="a">Bookshops, giftware, home living and of course, the odd handbag or "must-have that" top is yours for exploring.</div> 
+     <h2>Water Sports</h2>
+     <div class="a">Endless fun for all the family.</div> 
+     <div class="a">Sailing, fishing, kayaking, paddle boarding, snorkelling, scuba diving and surfing are all on offer, not to mention the cricket match on the beach.</div> 
+     <h2>Pet Friendly</h2>
+     <div class="a">We understand that pets are an essential part of the family.</div> 
+     <div class="a">We are pet friendly by arrangement - so please talk to us about your needs.</div> 
+     <div class="a">We offer a fully enclosed backyard, shady trees, water bowls, food bowls and a lead if you forget one.</div> 
+     <div class="a">Only 3 minutes from a leash-free beach, an oval close by and if you.</div>  
+ 
+ </div>
+</div>
+
+<footer>
+  <img src="icons/paypal_small.png"
+align="left"/>
+  <img src="icons/instagram_small.png"
+align="left"/>
+  <img src="icons/facebook_small.png"
+align="left"/>
+  <img src="icons/twitter_small.png"
+align="left"/>
+  <img src="icons/youtube_small.png"
+align="left"/>
+</footer>
+
+</body>
+</html>

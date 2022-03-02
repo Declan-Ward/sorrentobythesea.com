@@ -1,0 +1,182 @@
+<img src="icons/sorrento_by_the_sea_logo.jpg"
+ width="1220" 
+ height="100"/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Helvetica, Calibri;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #858585;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #555;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+h1 {text-align: center;}
+
+h1 {
+  color: #87423c;
+  font-family: Helvetica, Calibri;
+  font-size: 36px;
+
+}
+h2  {
+  color: #4d1d18;
+  font-family: Helvetica, Calibri;
+  font-size: 24px;
+}
+
+div.a{
+  line-height: 150%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Home.html">Home</a> 
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Pricing.html">Pricing</a> 
+  <a class="active href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Company%20Information%20&%20Contact%20Details.html">Company Information</a> 
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Highlights%20of%20the%20Local%20Area.html">Highlights</a> 
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Getting%20There.html">Getting There</a> 
+  <a href="file:///C:/Users/Declan/Desktop/TAFE/NEW%20TAFE%20STUFF/UNIT%206/Assignment%201/Website/Testimonials.html">Testimonials</a> 
+</div>
+
+<div style="padding-left:16px">
+</div>
+<style>
+ * {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 420px;
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h1>Company Information & Contact Details</h1>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="icons/apartment_front.jpg" style="width:100%">
+  <div class="text"></div>  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="icons/apartment_bath.jpg" style="width:100%">
+  <div class="text"></div> 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="icons/apartment_garden.jpg" style="width:100%">
+  <div class="text"></div>  
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 10 seconds
+}
+</script>
+
+<div class="row">
+
+<div class="column" style="background-color:#aaa;">
+    <h2>Company Information</h2>
+    <div class="a">On the Mornington Peninsula (one hour from Melbourne) next door to Portsea.</div>  
+    <div class="a">Our apartment is a lazy 10-minute walk from the relaxed township of Sorrento that offers restaurants, cafes, a chemist, a supermarket, a butcher and lots more. It is located in a quiet avenue, just 4 houses from the beach. It is in easy walking distance of the ocean beaches and surf.</div>
+    <div class="a">Your private luxury apartment consists of a spacious living area with leather lounge suite overlooking a sun drenched, tree-filled private garden.</div>
+    <div class="a">A separate kitchenette has everything you need to make your stay relaxed and comfortable. A queen sized bedroom and an amazing bathroom complete with free standing black bath entices you to relax and unwind.</div>
+	<div class="a">Two TVs are sure to make everyone happy!</div>  
+	<div class="a">An undercover BBQ area with seating offers plenty of space to stretch out and enjoy that cup of freshly brewed coffee or a glass of wine.</div> 
+    <div class="a">This is the perfect place for a home away from home.</div>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Contact Details</h2>
+    <div class="a">Information and Bookings</div> 
+    <div class="a">0435 123 456</div>
+    <div class="a">42 Holyrood Avenue</div>
+    <div class="a">Sorrento VIC 3943.</div>
+
+  </div>
+</div>
+
+<footer>
+  <img src="icons/paypal_small.png"
+align="left"/>
+  <img src="icons/instagram_small.png"
+align="left"/>
+  <img src="icons/facebook_small.png"
+align="left"/>
+  <img src="icons/twitter_small.png"
+align="left"/>
+  <img src="icons/youtube_small.png"
+align="left"/>
+</footer>
+
+</body>
+</html>
